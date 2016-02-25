@@ -1,6 +1,7 @@
 package streaming
 
 import org.apache.log4j.{Level, Logger}
+import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{Logging, SparkConf}
 import org.apache.spark.sql.SQLContext
 

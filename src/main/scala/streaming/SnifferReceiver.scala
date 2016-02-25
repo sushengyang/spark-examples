@@ -1,6 +1,10 @@
 package streaming
 
 import org.apache.spark.storage.StorageLevel
+import org.apache.spark.streaming.receiver.Receiver
+import org.pcap4j.core.PcapNetworkInterface.PromiscuousMode
+import org.pcap4j.core.Pcaps
+import org.pcap4j.packet.{IpV4Packet, EthernetPacket}
 
 class SnifferReceiver extends Receiver[Packet](StorageLevel.MEMORY_ONLY) {
 
